@@ -14,7 +14,7 @@
             font-size: 16px;
         }
         .main{
-            width: 1366px;
+            width: 1280px;
             margin: 0 auto;
         }
         .content{
@@ -32,13 +32,101 @@
 </head>
 <body>
    <div class="main clearfix">
-       <div class="p4 border-b1-devide">
-            <span class="color-title bold500">font 字体的使用</span>
-       </div>
+       <div class="panel">
+            <div class="p4 border-b1-devide">
+                    <span class="color-title bold">font 字体的使用</span>
+                    <div class="p1 bold500">解释:h12 ->> font-size:12px,剩下的一次类推,设置属性包括字体大小，加粗，斜体</div>
+            </div>
+            <div class=" my4 p4 clearfix">
+                <div class="row flex">
+                    <div class="col-md-3 col-md-offset-2 content p4">
+                        <div class="h12">h12 -->12px</div>
+                        <div class="h14">h14 -->14px</div>
+                        <div class="h16">h16 -->16px</div>
+                        <div class="h18">h18 -->18px</div>
+                        <div class="h20">h20 -->20px</div>
+                        <div class="h22">h22 -->22px</div>
+                        <div class="h24">h24 -->24px</div>
+                        <div class="h28">h28 -->28px</div>
+                        <div class="h32">h32 -->32px</div>
+                        <div class="h36">h36 -->36px</div>
+                    </div>
+                    <div class="col-md-offset-1 col-md-3 content p4">
+                        <div class="h40">h40 -->40px</div>
+                        <div class="h48">h48 -->48px</div>
+                        <div class="italic">italic {font-style:italic}</div>
+                        <div class="oblique">oblique {font-style:oblique}</div>    
+                        <div class="bold500">bold500 {font-weight: 500}</div>
+                        <div class="bold">bold {font-weight: bold}</div>
+                        <div class="bold800">bold800 {font-weight: 800}</div>
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
 
-       <div class="content my4 p4">
-           fff
-       </div>
+        <div class="panel">
+                <div class="p4 border-b1-devide">
+                        <span class="color-title bold">padding 与 margin 的使用</span>
+                        <div class="p1 bold500">
+                                解释: 我们使用的padding值,采用的是rem,1rem -->> 16px。       
+                        </div>
+                        <div class="p1 bold500">
+                                p1 -> 0.25rem,
+                                p2 -> 0.5rem, 
+                                p3 -> 0.75rem,
+                                p4 -> 1rem, 
+                                p5 -> 1.25rem,
+                                p6 -> 1.5rem, 
+                                p7 -> 1.75rem,
+                                p8 -> 2rem, 
+                                p9 -> 2.5rem,
+                                p10 -> 3rem,       
+                        </div>
+                </div>
+                <div class=" my4 p4 clearfix">
+                    <div class="row flex">
+                        <div class="col-md-3 col-md-offset-1 content p4">
+                               <div>p0  { padding: 0 } </div>
+                               <div>pt0 { padding-top: 0 }</div>
+                               <div>pr0 { padding-right: 0 }</div>
+                               <div>pb0 { padding-bottom: 0 }</div>
+                               <div>pl0 { padding-left: 0 }</div>
+                               <div>px0 { padding-left: 0; padding-right:  0 }</div>
+                               <div>py0 { padding-top: 0;  padding-bottom: 0 }</div>
+                        </div>
+                        <div class="col-md-offset-1 col-md-5 content ">
+                                <div>p1 { padding:        var(--space-1) }</div> 
+                                <div>pt1{ padding-top:    var(--space-1) }</div>
+                                <div>pr1{ padding-right:  var(--space-1) }</div> 
+                                <div>pb1 { padding-bottom: var(--space-1) }</div>
+                                <div>pl1 { padding-left:   var(--space-1) }</div>
+                                <div>py1 { padding-top:    var(--space-1); padding-bottom: var(--space-1) }</div>
+                                <div>px1 { padding-left:   var(--space-1); padding-right:  var(--space-1) }</div>           
+                        </div>
+                    </div>
+                    <div class="row flex mt8">
+                            <div class="col-md-3 col-md-offset-1 content p4">
+                                    <div>m0  { margin: 0 } </div>
+                                    <div>mt0 { margin-tom: 0 }</div>
+                                    <div>mr0 { margin-right: 0 }</div>
+                                    <div>mb0 { margin-bottom: 0 }</div>
+                                    <div>ml0 { margin-left: 0 }</div>
+                                    <div>mx0 { margin-left: 0; margin-right:  0 }</div>
+                                    <div>my0 { margin-top: 0;  margin-bottom: 0 }</div>
+                             </div>
+                             <div class="col-md-offset-1 col-md-5 content ">
+                                     <div>m1 { margin:        var(--space-1) }</div> 
+                                     <div>mt1{ margin-tom:    var(--space-1) }</div>
+                                     <div>mr1{ margin-right:  var(--space-1) }</div> 
+                                     <div>mb1 { margin-bottom: var(--space-1) }</div>
+                                     <div>ml1 { margin-left:   var(--space-1) }</div>
+                                     <div>my1 { margin-top:    var(--space-1); margin-bottom: var(--space-1) }</div>
+                                     <div>mx1 { margin-left:   var(--space-1); margin-right:  var(--space-1) }</div>
+                             </div>
+                    </div>
+                </div>
+            </div>
         
    </div>
 </body>
