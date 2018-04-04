@@ -1085,7 +1085,6 @@
   padding-top: var(--space-2);
   padding-bottom: var(--space-2);
   margin-bottom: 0;
-  border-radius: 3px;
   cursor: pointer;
   font-size: var(--h16);
   text-align: center;
@@ -1093,6 +1092,7 @@
   white-space: nowrap;
   color: #404040;
   display: inline-block;
+  border-radius: 2px;
   line-height: 1.42857143;
   background-image: none;
   border-width: 1px;
