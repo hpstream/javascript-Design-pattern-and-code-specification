@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" >
-    <link rel="stylesheet" href="./base/index.css" >
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./base/index.css">
+    <link rel="stylesheet" href="./component/index.css">
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
-        html{
+        html {
             font-size: 16px;
         }
-        body{
+
+        body {
             font-size: 16px;
         }
-        .main{
+
+        .main {
             width: 1280px;
             margin: 0 auto;
         }
-        .content{
+
+        .content {
             transition: all 0.4s;
-            box-shadow: 0px 2px 6px 0 rgba(0,0,0,0.12);
+            box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.12);
         }
 
-        .content:hover{
-            box-shadow: 0px 2px 6px 0 rgba(0,0,0,0.35);
+        .content:hover {
+            box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.35);
         }
-        .border-b1-devide{
+
+        .border-b1-devide {
             border-bottom: 1px solid #EBEBEB;
         }
     </style>
 </head>
+
 <body>
-   <div class="main clearfix">
-       <div class="center h24 p2">javascript的命名规范</div>
-       <div class="panel">
+    <div class="main clearfix">
+        <div class="center h24 p2">javascript的命名规范</div>
+        <!-- 字体的使用 -->
+        <div class="panel">
             <div class="p4 border-b1-devide">
-                    <span class="color-title bold" id="font">font 字体的使用</span>
-                    <div class="p1 bold500">解释:h12 ->> font-size:12px,剩下的一次类推,设置属性包括字体大小，加粗，斜体</div>
+                <span class="color-title bold" id="font">font 字体的使用</span>
+                <div class="p1 bold500">解释:h12 ->> font-size:12px,剩下的一次类推,设置属性包括字体大小，加粗，斜体</div>
             </div>
             <div class=" my4 p4 clearfix">
                 <div class="row flex">
@@ -59,82 +67,318 @@
                         <div class="h40">h40 -->40px</div>
                         <div class="h48">h48 -->48px</div>
                         <div class="italic">italic {font-style:italic}</div>
-                        <div class="oblique">oblique {font-style:oblique}</div>    
+                        <div class="oblique">oblique {font-style:oblique}</div>
                         <div class="bold500">bold500 {font-weight: 500}</div>
                         <div class="bold">bold {font-weight: bold}</div>
                         <div class="bold800">bold800 {font-weight: 800}</div>
-                            
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- padding 与margin 的使用 -->
+        <div class="panel">
+            <div class="p4 border-b1-devide">
+                <span class="color-title bold" id="padding">padding 与 margin 的使用</span>
+                <div class="p1 bold500">
+                    解释: 我们使用的padding值,采用的是rem,1rem -->> 16px。
+                </div>
+                <div class="p1 bold500">
+                    p1 -> 0.25rem, p2 -> 0.5rem, p3 -> 0.75rem, p4 -> 1rem, p5 -> 1.25rem, p6 -> 1.5rem, p7 -> 1.75rem, p8 -> 2rem, p9 -> 2.5rem,
+                    p10 -> 3rem,
+                </div>
+            </div>
+            <div class=" my4 p4 clearfix">
+                <div class="row flex">
+                    <div class="col-md-3 col-md-offset-1 content p4">
+                        <div>p0 { padding: 0 } </div>
+                        <div>pt0 { padding-top: 0 }</div>
+                        <div>pr0 { padding-right: 0 }</div>
+                        <div>pb0 { padding-bottom: 0 }</div>
+                        <div>pl0 { padding-left: 0 }</div>
+                        <div>px0 { padding-left: 0; padding-right: 0 }</div>
+                        <div>py0 { padding-top: 0; padding-bottom: 0 }</div>
+                    </div>
+                    <div class="col-md-offset-1 col-md-5 content ">
+                        <div>p1 { padding: var(--space-1) }</div>
+                        <div>pt1{ padding-top: var(--space-1) }</div>
+                        <div>pr1{ padding-right: var(--space-1) }</div>
+                        <div>pb1 { padding-bottom: var(--space-1) }</div>
+                        <div>pl1 { padding-left: var(--space-1) }</div>
+                        <div>py1 { padding-top: var(--space-1); padding-bottom: var(--space-1) }</div>
+                        <div>px1 { padding-left: var(--space-1); padding-right: var(--space-1) }</div>
+                    </div>
+                </div>
+                <div class="row flex mt8">
+                    <div class="col-md-3 col-md-offset-1 content p4">
+                        <div>m0 { margin: 0 } </div>
+                        <div>mt0 { margin-tom: 0 }</div>
+                        <div>mr0 { margin-right: 0 }</div>
+                        <div>mb0 { margin-bottom: 0 }</div>
+                        <div>ml0 { margin-left: 0 }</div>
+                        <div>mx0 { margin-left: 0; margin-right: 0 }</div>
+                        <div>my0 { margin-top: 0; margin-bottom: 0 }</div>
+                    </div>
+                    <div class="col-md-offset-1 col-md-5 content ">
+                        <div>m1 { margin: var(--space-1) }</div>
+                        <div>mt1{ margin-tom: var(--space-1) }</div>
+                        <div>mr1{ margin-right: var(--space-1) }</div>
+                        <div>mb1 { margin-bottom: var(--space-1) }</div>
+                        <div>ml1 { margin-left: var(--space-1) }</div>
+                        <div>my1 { margin-top: var(--space-1); margin-bottom: var(--space-1) }</div>
+                        <div>mx1 { margin-left: var(--space-1); margin-right: var(--space-1) }</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel">
+            <div class="p4 border-b1-devide">
+                <span class="color-title bold" id="position">position 与 flex 的使用</span>
+                <div class="p1 bold500">解释: flex是弹性布局,具体使用规则可以查看
+                    <a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html" target="view_window">flex阮一峰教程</a>
+                </div>
+            </div>
+            <div class=" my4 p4 clearfix">
+                <div class="row flex">
+                    <div class="col-md-3 col-md-offset-2 content p4">
+                        <div>relative { position: relative }</div>
+                        <div>absolute { position: absolute }</div>
+                        <div>fixed { position: fixed }</div>
+                        <div>top-0 { top: 0 }</div>
+                        <div>left-0 { left: 0 }</div>
+                        <div>right-0 { right: 0 }</div>
+                        <div>bottom-0 { bottom: 0 }</div>
+
+                        <div>flex { display: flex }</div>
+                        <div>flex-column { flex-direction: column }</div>
+                        <div>flex-wrap { flex-wrap: wrap }</div>
+                        <div>items-start { align-items: flex-start }</div>
+                        <div>items-end { align-items: flex-end }</div>
+                        <div>items-center { align-items: center }</div>
+                        <div>items-baseline { align-items: baseline }</div>
+                        <div>items-stretch { align-items: stretch }</div>
+                        <div>self-start { align-self: flex-start }</div>
+
+                    </div>
+                    <div class="col-md-offset-1 col-md-4 content p4">
+                        <div>self-end { align-self: flex-end }</div>
+                        <div>self-center { align-self: center }</div>
+                        <div>self-baseline { align-self: baseline }</div>
+                        <div>self-stretch { align-self: stretch }</div>
+                        <div>justify-start { justify-content: flex-start }</div>
+                        <div>justify-end { justify-content: flex-end }</div>
+                        <div>justify-center { justify-content: center }</div>
+                        <div>justify-between { justify-content: space-between }</div>
+                        <div>justify-around { justify-content: space-around }</div>
+                        <div>content-start { align-content: flex-start }</div>
+                        <div>content-end { align-content: flex-end }</div>
+                        <div>content-center { align-content: center }</div>
+                        <div>content-between { align-content: space-between }</div>
+                        <div>content-around { align-content: space-around }</div>
+                        <div>content-stretch { align-content: stretch }</div>
+                        <div>flex-none { flex: none }</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel">
+            <div class="p4 border-b1-devide">
+                <span class="color-title bold" id="fragment">零碎属性</span>
+                <div class="p1 bold500">解释: 这要包括 （vertical-align,text-align,display,visibility,overflow,clearfix,float等）
+                </div>
+            </div>
+            <div class=" my4 p4 clearfix">
+                <div class="row flex">
+                    <div class="col-md-3 col-md-offset-2 content p4">
+                        <div class="bold h18">vertical,text-aligin的使用</div>
+                        <div>align-baseline { vertical-align: baseline }</div>
+                        <div>align-top { vertical-align: top }</div>
+                        <div>align-middle { vertical-align: middle }</div>
+                        <div>align-bottom { vertical-align: bottom }</div>
+                        <div>left-align { text-align: left }</div>
+                        <div>center { text-align: center }</div>
+                        <div>right-align { text-align: right }</div>
+                        <div>justify { text-align: justify }</div>
+
+                    </div>
+                    <div class="col-md-offset-1 col-md-4 content p4">
+                        <div>hide { display: none !important }</div>
+                        <div>visible-hidden{visibility: hidden;}</div>
+                        <div>inline { display: inline }</div>
+                        <div>block { display: block }</div>
+                        <div>inline-block { display: inline-block }</div>
+                        <div>table { display: table }</div>
+                        <div>table-cell { display: table-cell }</div>
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row flex m8">
+                    <div class="col-md-3 col-md-offset-2 content p4">
+                        <div class="bold h18">vertical,text-aligin的使用</div>
+                        <div>hidden { overflow: hidden }</div>
+                        <div>hiddenX { overflow-x: hidden }</div>
+                        <div>hiddenY { overflow-y: hidden }</div>
+                        <div>scrollY { overflow-y: scroll }</div>
+                        <div>scrollX { overflow-x: scroll }</div>
+                        <div>scroll { overflow: scroll }</div>
+                        <div>auto { overflow: auto }</div>
+                        <div>autoY { overflow-y: auto }</div>
+                        <div>autoX { overflow-x: auto }</div>
+
+                    </div>
+                    <div class="col-md-offset-1 col-md-4 content p4 ">
+                        <div class="bold h18">float 一些小属性的使用</div>
+                        <div>f-left { float: left }</div>
+                        <div>f-right { float: right }</div>
+                        <div>nowrap { white-space: nowrap }</div>
+                        <div>break-word { word-wrap: break-word }</div>
+                        <div>font-family-inherit { font-family: inherit }</div>
+                        <div>font-size-inherit { font-size: inherit }</div>
+                        <div>text-decoration-none { text-decoration: none }</div>
+                        <div>border-box { box-sizing: border-box } </div>
+                    </div>
+                </div>
+
+                <div class="row flex m8">
+                    <div class="col-md-8 col-md-offset-2 content p4">
+                        <div class="bold h18">多行显示存在兼容性问题(只有chrome有效)</div>
+                        <textarea disabled rows="30" style="width:100%;resize:none">
+                                    .animate-hide {
+                                        position: absolute !important;
+                                        height: 1px;
+                                        width: 1px;
+                                        overflow: hidden;
+                                        clip: rect(1px, 1px, 1px, 1px);
+                                        }
+                                        //单行省略号隐藏
+                                    .dot-hidden {
+                                    max-width: 100%;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    }
+
+                                    .multiple2-hidden{
+                                    word-break: break-all;
+                                    text-overflow: ellipsis;
+                                    display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+                                    -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+                                    -webkit-line-clamp: 2; /** 显示的行数 **/
+                                    overflow: hidden;  /** 隐藏超出的内容 **/
+                                    }
+                                    .multiple3-hidden{
+                                    word-break: break-all;
+                                    text-overflow: ellipsis;
+                                    display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+                                    -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+                                    -webkit-line-clamp: 3; /** 显示的行数 **/
+                                    overflow: hidden;  /** 隐藏超出的内容 **/
+                                    }
+                                </textarea>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="panel">
-                <div class="p4 border-b1-devide">
-                        <span class="color-title bold" id="padding">padding 与 margin 的使用</span>
-                        <div class="p1 bold500">
-                                解释: 我们使用的padding值,采用的是rem,1rem -->> 16px。       
-                        </div>
-                        <div class="p1 bold500">
-                                p1 -> 0.25rem,
-                                p2 -> 0.5rem, 
-                                p3 -> 0.75rem,
-                                p4 -> 1rem, 
-                                p5 -> 1.25rem,
-                                p6 -> 1.5rem, 
-                                p7 -> 1.75rem,
-                                p8 -> 2rem, 
-                                p9 -> 2.5rem,
-                                p10 -> 3rem,       
-                        </div>
+            <div class="p4 border-b1-devide">
+                <span class="color-title bold" id="padding">border 的使用</span>
+                <div class="p1 bold500">
+                    解释: 由于border属性比较多，我们定义几个基础.class。后期我们使用less扩展，可以调用这些基础.calss"组件我们需要的样式
                 </div>
-                <div class=" my4 p4 clearfix">
-                    <div class="row flex">
-                        <div class="col-md-3 col-md-offset-1 content p4">
-                               <div>p0  { padding: 0 } </div>
-                               <div>pt0 { padding-top: 0 }</div>
-                               <div>pr0 { padding-right: 0 }</div>
-                               <div>pb0 { padding-bottom: 0 }</div>
-                               <div>pl0 { padding-left: 0 }</div>
-                               <div>px0 { padding-left: 0; padding-right:  0 }</div>
-                               <div>py0 { padding-top: 0;  padding-bottom: 0 }</div>
-                        </div>
-                        <div class="col-md-offset-1 col-md-5 content ">
-                                <div>p1 { padding:        var(--space-1) }</div> 
-                                <div>pt1{ padding-top:    var(--space-1) }</div>
-                                <div>pr1{ padding-right:  var(--space-1) }</div> 
-                                <div>pb1 { padding-bottom: var(--space-1) }</div>
-                                <div>pl1 { padding-left:   var(--space-1) }</div>
-                                <div>py1 { padding-top:    var(--space-1); padding-bottom: var(--space-1) }</div>
-                                <div>px1 { padding-left:   var(--space-1); padding-right:  var(--space-1) }</div>           
-                        </div>
-                    </div>
-                    <div class="row flex mt8">
-                            <div class="col-md-3 col-md-offset-1 content p4">
-                                    <div>m0  { margin: 0 } </div>
-                                    <div>mt0 { margin-tom: 0 }</div>
-                                    <div>mr0 { margin-right: 0 }</div>
-                                    <div>mb0 { margin-bottom: 0 }</div>
-                                    <div>ml0 { margin-left: 0 }</div>
-                                    <div>mx0 { margin-left: 0; margin-right:  0 }</div>
-                                    <div>my0 { margin-top: 0;  margin-bottom: 0 }</div>
-                             </div>
-                             <div class="col-md-offset-1 col-md-5 content ">
-                                     <div>m1 { margin:        var(--space-1) }</div> 
-                                     <div>mt1{ margin-tom:    var(--space-1) }</div>
-                                     <div>mr1{ margin-right:  var(--space-1) }</div> 
-                                     <div>mb1 { margin-bottom: var(--space-1) }</div>
-                                     <div>ml1 { margin-left:   var(--space-1) }</div>
-                                     <div>my1 { margin-top:    var(--space-1); margin-bottom: var(--space-1) }</div>
-                                     <div>mx1 { margin-left:   var(--space-1); margin-right:  var(--space-1) }</div>
-                             </div>
+            </div>
+            <div class=" my4 p4 clearfix">
+                <div class="row flex">
+                    <div class="col-md-3 col-md-offset-1 content p4">
+                        <div>border-dashed{ border-style: dashed;}</div>
+                        <div>border-solid{border-style: solid;}</div>
+                        <div>border-width1{border-width: 1px;}</div>
+                        <div>border-width2{border-width: 2px;}</div>
+                        <div>radius-circle{border-radius: 50%;}</div>
+                        <div>radius-3{border-radius: 3px;}</div>
+                        <div>radius-5{border-radius: 5px;}</div>
                     </div>
                 </div>
             </div>
-        
-   </div>
+        </div>
+        <div class="panel">
+                <div class="p4 border-b1-devide">
+                    <span class="color-title bold" id="padding">color颜色 的使用</span>
+                    <div class="p1 bold500">
+                        解释: 根据UI的设计规范，先定出了几种常用颜色
+                        <span class="bold">我们通过这些属性class,通过less,就可以组装成各种各样的样式,</span>
+                    </div>
+                </div>
+                <div class=" my4 p4 clearfix">
+                    <div class="row flex">
+                        <div class="col-md-8 col-md-offset-1 content p4 " style="background:rgba(0,0,0,0.6)">
+                            <div class="p2">字体颜色</div>
+                            <div>
+                                    <span class="inline-block p2 color-white pr4">color-white</span>
+                                    <span class="inline-block p2 color-smokeWhite pr4">color-smokeWhite</span>
+                                    <span class="inline-block p2 color-title pr4">color-title</span>
+                                    <span class="inline-block p2 color-secondaryText pr4">color-secondaryText</span>
+                                    <span class="inline-block p2 color-placeholder pr4">color-placeholder</span>
+                                    <span class="inline-block p2 color-disabled pr4">color-disabled</span>
+                                    <span class="inline-block p2 color-blue pr4">color-blue</span>
+                                    <span class="inline-block p2 color-green pr4">color-green</span>
+                                    <span class="inline-block p2 color-yellow pr4">color-yellow</span>
+                                    <span class="inline-block p2 color-red pr4">color-red</span>
+                            </div>
+                            <div>带颜色变化的字体颜色</div>
+                            <div>
+                                    <span class="inline-block p2 color-link pr4">color-link</span>
+                                    <span class="inline-block p2 color-error pr4">color-error</span>
+                                    <span class="inline-block p2 color-success pr4">color-success</span>
+                                    <span class="inline-block p2 color-warning pr4">color-warning</span>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="row flex mt4">
+                            <div class="col-md-8 col-md-offset-1 content p4" style="background:rgba(0,0,0,0.6)">
+                                <div class="p2">背景</div>
+                                <div>
+                                    <span class="inline-block p2 m4  bg-fill">bg-fill</span>
+                                    <span class="inline-block p2 m4 bg-Invalid">bg-Invalid</span>
+                                    <span class="inline-block p2 m4 bg-ground">bg-ground</span>
+                                    <span class="inline-block p2 m4 bg-devide">bg-devide</span>
+                                    <span class="inline-block p2 m4 bg-border">bg-border</span>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="row flex mt4">
+                            <div class="col-md-9 col-md-offset-1 content p4" style="background:rgba(0,0,0,0.6)">
+                                <div class="p2">组装成按钮</div>
+                                <div>
+                                    <span class="FDbtn FDbtn-default m4">FDbtn FDbtn-default</span>
+                                    <span class="FDbtn FDbtn-success m4">FDbtn FDbtn-success</span>
+                                    <span class="FDbtn FDbtn-error m4">FDbtn FDbtn-error</span>
+                                    <span class="FDbtn FDbtn-link m4">FDbtn FDbtn-link</span>
+                                    <span class="FDbtn FDbtn-warning m4">FDbtn FDbtn-warning</span>
+                                </div>
+                                <div class="mt2">
+                                        <span class="FDbtn FDbtn-success FDbtn-xs">FDbtn FDbtn-success</span>
+                                        <span class="FDbtn FDbtn-success FDbtn-sm">FDbtn FDbtn-success FDbtn-sm</span>
+                                        <span class="FDbtn FDbtn-success">FDbtn FDbtn-success</span>
+                                        <span class="FDbtn FDbtn-success FDbtn-lg">FDbtn FDbtn-success FDbtn-lg</span>
+                                    </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
 </body>
 <script>
 
 </script>
+
 </html>

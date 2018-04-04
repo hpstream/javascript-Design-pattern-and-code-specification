@@ -8,11 +8,29 @@
 .border-width1 {
   border-width: 1px;
 }
+.border-b-width1 {
+  border-bottom-width: 1px;
+}
+.border-l-width1 {
+  border-left-width: 1px;
+}
+.border-right-width1 {
+  border-right-width: 1px;
+}
+.border-top-width1 {
+  border-top-width: 1px;
+}
 .border-width2 {
   border-width: 2px;
 }
 .border-width3 {
   border-width: 3px;
+}
+.radius-3 {
+  border-radius: 3px;
+}
+.radius-5 {
+  border-radius: 5px;
 }
 .radius-circle {
   border-radius: 50%;

@@ -1,0 +1,18 @@
+.border-color-transparent {
+  border-color: transparent;
+}
+.border-color-defalut {
+  border-color: #D9D9D9;
+}
+.border-color-error {
+  border-color: #F04134;
+}
+.border-color-success {
+  border-color: #00A854;
+}
+.border-color-warning {
+  border-color: #FFBF00;
+}
+.border-color-link {
+  border-color: #1B95E7;
+}

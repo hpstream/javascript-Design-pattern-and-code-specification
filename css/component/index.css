@@ -8,6 +8,18 @@
 .border-width1 {
   border-width: 1px;
 }
+.border-b-width1 {
+  border-bottom-width: 1px;
+}
+.border-l-width1 {
+  border-left-width: 1px;
+}
+.border-right-width1 {
+  border-right-width: 1px;
+}
+.border-top-width1 {
+  border-top-width: 1px;
+}
 .border-width2 {
   border-width: 2px;
 }
@@ -106,6 +118,24 @@
 }
 .color-red {
   color: #F04134;
+}
+.border-color-transparent {
+  border-color: transparent;
+}
+.border-color-defalut {
+  border-color: #D9D9D9;
+}
+.border-color-error {
+  border-color: #F04134;
+}
+.border-color-success {
+  border-color: #00A854;
+}
+.border-color-warning {
+  border-color: #FFBF00;
+}
+.border-color-link {
+  border-color: #1B95E7;
 }
 /*
 *   弹性布局，具体以 http://basscss.com/ 为基础
@@ -1048,4 +1078,98 @@
   --z2: 2;
   --z3: 3;
   --z4: 4;
+}
+.FDbtn {
+  padding-left: var(--space-3);
+  padding-right: var(--space-3);
+  padding-top: var(--space-2);
+  padding-bottom: var(--space-2);
+  margin-bottom: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: var(--h16);
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  color: #404040;
+  display: inline-block;
+  line-height: 1.42857143;
+  background-image: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.FDbtn.FDbtn-default {
+  color: #404040;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D9D9D9;
+  background-color: #FFFFFF;
+}
+.FDbtn.FDbtn-default:hover {
+  background-color: #F8F8F8;
+}
+.FDbtn.FDbtn-warning {
+  color: #FFFFFF;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #FFBF00;
+  background-color: #FFBF00;
+}
+.FDbtn.FDbtn-warning:hover {
+  background-color: #FFCE3D;
+}
+.FDbtn.FDbtn-success {
+  color: #FFFFFF;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #00A854;
+}
+.FDbtn.FDbtn-success:hover {
+  background-color: #3DBD7D;
+}
+.FDbtn.FDbtn-error {
+  color: #FFFFFF;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #F04134;
+}
+.FDbtn.FDbtn-error:hover {
+  background-color: #F46E65;
+}
+.FDbtn.FDbtn-link {
+  color: #FFFFFF;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #1B95E7;
+}
+.FDbtn.FDbtn-link:hover {
+  background-color: #52AEED;
+}
+.FDbtn.FDbtn-sm {
+  font-size: var(--h14);
+  padding-left: var(--space-2);
+  padding-right: var(--space-2);
+  padding-top: var(--space-1);
+  padding-bottom: var(--space-1);
+}
+.FDbtn.FDbtn-lg {
+  font-size: var(--h18);
+  padding-left: var(--space-6);
+  padding-right: var(--space-6);
+  padding-top: var(--space-4);
+  padding-bottom: var(--space-4);
+}
+.FDbtn.FDbtn-xs {
+  font-size: var(--h12);
+  padding-left: var(--space-1);
+  padding-right: var(--space-1);
+  padding-top: 0;
+  padding-bottom: 0;
 }

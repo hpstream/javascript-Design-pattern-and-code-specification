@@ -1,0 +1,92 @@
+@import '../../base/index.less';
+
+
+.FDbtn {
+    .px3;
+    .py2;
+    .mb0;
+    .radius-3;
+    .pointer;
+    .h16;
+    .center;
+    .align-middle;
+    .nowrap;
+    .color-title;
+    .inline-block;
+    line-height: 1.42857143;
+    background-image: none;
+    .border-width1;
+    .border-solid;
+    .border-color-transparent;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.FDbtn.FDbtn-default{
+    .color-title;
+    .border-width1;
+    .border-solid;
+    .border-color-defalut;
+    background-color: @white;
+    &:hover{
+        background-color: @bg1;
+    }
+}
+.FDbtn.FDbtn-warning{
+    .color-white;
+    .border-width1;
+    .border-solid;
+    .border-color-warning;
+    background-color: @warning;
+    &:hover{
+        background-color: @warning-hover;
+    }
+}
+.FDbtn.FDbtn-success{
+    .color-white;
+    .border-width1;
+    .border-solid;
+    background-color: @success;
+    &:hover{
+        background-color: @success-hover;
+    }
+}
+.FDbtn.FDbtn-error{
+    .color-white;
+    .border-width1;
+    .border-solid;
+    background-color: @error;
+    &:hover{
+        background-color: @error-hover;
+    }
+}
+.FDbtn.FDbtn-link{
+    .color-white;
+    .border-width1;
+    .border-solid;
+    background-color: @links;
+    &:hover{
+        background-color: @links-hover;
+    }
+}
+//小按钮
+.FDbtn.FDbtn-sm{
+    .h14;
+    .px2;
+    .py1;
+}
+.FDbtn.FDbtn-lg{
+    .h18;
+    .px6;
+    .py4;
+}
+//超小
+.FDbtn.FDbtn-xs{
+    .h12;
+    .px1;
+    .py0;
+}

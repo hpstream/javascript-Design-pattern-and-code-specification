@@ -32,12 +32,12 @@
   color: #F04134;
 }
 .color-error:hover {
-  color: #F04134;
+  color: #F46E65;
 }
 .color-error:active {
   color: #D73435;
 }
-.color-sucess {
+.color-success {
   color: #00A854;
 }
 .color-success:hover {
@@ -46,7 +46,7 @@
 .color-success:active {
   color: #00924C;
 }
-.color-wanrning {
+.color-warning {
   color: #FFBF00;
 }
 .color-warning:hover {
