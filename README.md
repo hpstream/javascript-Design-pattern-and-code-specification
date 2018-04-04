@@ -3,7 +3,7 @@
    - [2.编写代码需遵守的几个原则](#2.编写代码需遵守的几个原则)
    - [3.编码规范(Coding Conventions)](#3.编码规范)
    - [4.命名规范(Naming Conventions)](#4.命名规范)
-
+   - [5.css基础class类](https://hpstream.github.io/javascript-Design-pattern-and-code-specification/css/index.html)
 # 1.为什要遵守代码规范
 软件bug的修复是昂贵的，并且随着时间的推移，这些bug的成本也会增加，尤其当这些bug潜伏并慢慢出现在已经发布的软件中时。当你发现bug 的时候就立即修复它是最好的，此时你代码要解决的问题在你脑中还是很清晰的。否则，你转移到其他任务，忘了那个特定的代码，一段时间后再去查看这些代码就 需要：
 
