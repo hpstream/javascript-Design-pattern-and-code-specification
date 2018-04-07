@@ -44,12 +44,13 @@
 
 >经历过几年上班经验的总结，和在无意中参考张旭鑫老师的[面向属性的命名](http://www.zhangxinxu.com/wordpress/2010/09/%E7%B2%BE%E7%AE%80%E9%AB%98%E6%95%88%E7%9A%84css%E5%91%BD%E5%90%8D%E5%87%86%E5%88%99%E6%96%B9%E6%B3%95/)。终于找到了一套比较规范的标准。
 
-[我自己按照标准和规范制定了一套css](https://hpstream.github.io/javascript-Design-pattern-and-code-specification/css/index.html)，采用less写的，非常简单，大家去自己公司，可以为公司制定一套标准，提供公司使用。
+[我自己按照标准和规范制定了一套css](https://hpstream.github.io/javascript-Design-pattern-and-code-specification/codeSpecification/css/index.html)，采用less写的，非常简单，大家去自己公司，可以为公司制定一套标准，提供公司使用。
 
 ## 2.2 less与sass
 在使用写组建的时候我们需要使用less和sass,进行扩展。提高效率。
-###2.2.1 [less官网](http://www.bootcss.com/p/lesscss/#docs)
-###2.2.2 [sass官网](https://www.sass.hk/)
+
+### 2.2.1 [less官网](http://www.bootcss.com/p/lesscss/#docs)
+### 2.2.2 [sass官网](https://www.sass.hk/)
 
 **注意：sass的文件格式分成两种，一个是.scss(不严格语法)，一个是.sass(严格语法)**
 
