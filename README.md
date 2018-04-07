@@ -4,9 +4,9 @@
    - [3.js代码规范与设计模式](./codeSpecification/js/1.js代码规范.md)
         - [3.1 js代码规范](./codeSpecification/js/1.js代码规范.md)
         - [3.2 设计模式](./codeSpecification/js/单例模式.md)
-   - [4.关于混合式开发的总结](https://hpstream.github.io/javascript-Design-pattern-and-code-specification/doc/preview/hybrid.html)
+   - [4.关于混合式开发的总结](https://hpstream.github.io/javascript-Design-pattern-and-code-specification/doc/hybrid/preview/hybrid.html)
    - [5.关于reactNative总结](https://hpstream.github.io/javascript-Design-pattern-and-code-specification/doc/reactNative/README.html)
-   - [6.sql基本操作](https://hpstream.github.io/javascript-Design-pattern-and-code-specification/doc/mysql/REASME.md)
+   - [6.sql基本操作](./doc/mysql/REASME.md)
 
 # 1为什要遵守代码规范
 软件bug的修复是昂贵的，并且随着时间的推移，这些bug的成本也会增加，尤其当这些bug潜伏并慢慢出现在已经发布的软件中时。当你发现bug 的时候就立即修复它是最好的，此时你代码要解决的问题在你脑中还是很清晰的。否则，你转移到其他任务，忘了那个特定的代码，一段时间后再去查看这些代码就 需要：
